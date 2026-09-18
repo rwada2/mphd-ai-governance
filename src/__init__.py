@@ -1,0 +1,1 @@
+"""Synthetic capstone rule demonstrator."""
