@@ -30,5 +30,8 @@ Before a future merge, update affected requirements, diagrams, rules, and tests 
 
 ## Hosting
 
-A remote URL and reviewer access must be established through the owner's GitHub or GitLab account.
+Repository: [rwada2/Week3_Detailed_Design](https://github.com/rwada2/Week3_Detailed_Design).
+
+Both `main` and `development` are published for the Unit 3 version-control demonstration.
+Viewing access should be verified before submitting the repository URL to the instructor.
 Do not commit secrets, real intake submissions, credentials, or raw audit logs.
