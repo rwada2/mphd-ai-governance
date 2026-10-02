@@ -1,0 +1,26 @@
+Command: python demo_week5.py
+
+SYNTHETIC HEAT ADVISORY
+{
+  "title": "Drafting public heat advisories",
+  "owner": "Jordan Lee",
+  "decision": {
+    "tier": "moderate",
+    "rule_ids": [
+      "R07"
+    ],
+    "rule_version": "MPHD-0.1"
+  },
+  "route": "Security and data governance",
+  "status": "Pending review"
+}
+
+RESTRICTED INFORMATION IN UNAPPROVED EXTERNAL TOOL
+tier: unacceptable | rules: R02, R04 | status: Blocked
+
+REVIEW CHECKS | fixed reference date 2026-10-01
+moderate: Approved with conditions
+unacceptable: The illustrative policy blocks approval
+
+MALFORMED INPUT CHECK
+ValueError: Missing or invalid field: data_class

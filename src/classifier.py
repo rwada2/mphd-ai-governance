@@ -1,5 +1,6 @@
 """Explicit illustrative MPHD policy rules; not legal advice or a production gate."""
 from dataclasses import dataclass
+from collections.abc import Mapping
 
 VERSION = "MPHD-0.1"
 TIERS = {"low": 0, "moderate": 1, "high": 2, "unacceptable": 3}
@@ -17,8 +18,10 @@ class Decision:
     rule_version: str = VERSION
 
 def classify(case):
+    if not isinstance(case, Mapping):
+        raise ValueError("A proposal object is required")
     for key, choices in REQUIRED.items():
-        if case.get(key) not in choices:
+        if not isinstance(case.get(key), str) or case[key] not in choices:
             raise ValueError(f"Missing or invalid field: {key}")
     for key in BOOL_FIELDS:
         if type(case.get(key)) is not bool:
