@@ -33,6 +33,11 @@ and local evidence. `evidence/week5-unit-tests.txt` records successful execution
 The older Week 4 browser/SQLite demonstration remains in the course workspace;
 its storage and HTTP behavior are not covered by these isolated module tests.
 
+The [Week 5 traceability supplement](docs/week5-traceability.md) maps implemented
+requirement slices to pinned source, named tests, passing results, and commits.
+It is a later evidence improvement proposed through a pull request; it does not
+change or replace the original Week 5 milestone.
+
 ## Branches
 
 `main` holds reviewed baselines. `development` holds proposed changes.
